@@ -1,0 +1,2 @@
+# kmu.ee
+Personal homepage
