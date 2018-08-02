@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import "./glide.scss";
+
+.container {
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+
+	svg {
+		width: 60rem;
+		height: 50vh;
+		stroke-width: 4;
+		align-content: center;
+
+		tspan > tspan {
+			stroke-dasharray: 1500;
+			stroke-dashoffset: -1500;
+
+			@for $i from 1 through 16 {
+
+				&:nth-of-type(#{$i}) {
+					animation: draw 300ms #{$i * 150}ms forwards;
+				}
+			}
+		}
+	}
+}
+
+
+.Lever {
+	margin-top: 40px;
+	height: 120px;
+}
+.Lever-pull {
+	width: 100px;
+	height: 200px;
+	transform:rotate(90deg);
+	animation: Lever-pull-bend infinite 2s;
+}
+
+.Lever-wall {
+	width: 30px;
+	height: 100px;
+	transform:translateX(-80px) rotate(90deg);
+}
+
+
+.next-appear {
+	opacity: 0.01;
+}
+
+.next-appear.next-appear-active {
+	opacity: 1;
+	transition: opacity .5s ease-in;
+}
+
+.myName {
+	color: #645F5A;
+	font-family: 'Luckiest Guy', cursive;
+	stroke: white;
+	font-size: 100px;
+}
+
+@keyframes draw {
+
+	100% {
+		stroke-dashoffset: 0;
+	}
+
+}
+
+
+@-webkit-keyframes Lever-pull-bend {
+	0% {
+		-webkit-transform: translateX(0%) rotate(-270deg);
+	}
+	15% {
+		-webkit-transform: translateX(-3%) rotate(-275deg);
+	}
+	30% {
+		-webkit-transform: translateX(3%) rotate(-267deg) ;
+	}
+	45% {
+		-webkit-transform: translateX(-3%) rotate(-273deg) ;
+	}
+	60% {
+		-webkit-transform: translateX(3%) rotate(-266deg) ;
+	}
+	75% {
+		-webkit-transform: translateX(-3%) rotate(-275deg);
+	}
+	100% {
+		-webkit-transform: translateX(0%) rotate(-270deg);
+	}
+}
+
+@-moz-keyframes Lever-pull-bend {
+	0% {
+		-moz-transform:  translateX(0%) rotate(-270deg);
+	}
+	15% {
+		-moz-transform: translateX(-3%) rotate(-275deg);
+	}
+	30% {
+		-moz-transform: translateX(3%) rotate(-267deg);
+	}
+	45% {
+		-moz-transform: translateX(-3%) rotate(-273deg);
+	}
+	60% {
+		-moz-transform: translateX(5%) rotate(-266deg);
+	}
+	75% {
+		-moz-transform: translateX(-3%) rotate(-275deg);
+	}
+	100% {
+		-moz-transform: translateX(0%) rotate(-270deg);
+	}
+}
+
