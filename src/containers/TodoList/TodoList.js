@@ -3,33 +3,6 @@ import React, { Component } from 'react';
 import './TodoList.css';
 
 class TodoList extends Component {
-
-	componentWillAppear(callback) {
-		console.log("stuck siin");
-		callback();
-		console.log('will appear EXAMPLE');
-	}
-
-	componentWillEnter(callback) {
-		console.log("vb siin");
-		callback();
-		console.log('will enter');
-	}
-
-	componentDidEnter() {
-		console.log('did appear');
-	}
-
-	componentDidMount() {
-		console.log("Supp");
-	}
-
-
-	componentDidAppear() {
-		console.log('did appear EXAMPLE');
-	}
-
-
 	render() {
 		return (
 			<ReactCSSTransitionGroup

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
-@import "./glide.scss";
 
 .container {
 	background-color: rgba(0, 0, 0, 0.5);
@@ -28,11 +27,6 @@
 	}
 }
 
-
-.Lever {
-	margin-top: 40px;
-	height: 120px;
-}
 .Lever-pull {
 	width: 100px;
 	height: 200px;

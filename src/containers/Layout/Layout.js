@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from '../../assets/images/logo.svg';
 import ReactTransitionGroup from 'react-addons-css-transition-group'; // ES6
 import './Layout.css';
 import { connect } from 'react-redux';
 
-import Example from '../Example/Example';
 import TodoList from '../TodoList/TodoList';
+import Lever from '../Lever/Lever';
 
 class Layout extends Component {
 
@@ -15,7 +14,7 @@ class Layout extends Component {
 				<ReactTransitionGroup transitionName="example"
 									  transitionEnterTimeout={500}
 									  transitionLeaveTimeout={300}>
-					{this.props.isLeverPulled ? <TodoList/> : <Example/>}
+					{this.props.isLeverPulled ? <TodoList/> : <Lever/>}
 				</ReactTransitionGroup>
 			</div>
 		)
