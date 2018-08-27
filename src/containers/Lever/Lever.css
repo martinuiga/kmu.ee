@@ -11,12 +11,18 @@
   width: 100px;
   height: 30px;
   transform: rotate(90deg);
-  animation: pullDown infinite 2s; }
+  animation: pullDown2 2s forwards; }
 
 .Lever-wall {
   width: 30px;
   height: 100px;
   transform: translateX(-83px) translateY(80px) rotate(90deg); }
+
+@keyframes pullDown2 {
+  from {
+    transform: rotate(-270deg) translateX(0%) translateY(0%); }
+  to {
+    transform: rotate(-320deg) translateX(-25%) translateY(105%); } }
 
 @keyframes pullDown {
   0% {
@@ -65,3 +71,8 @@
     -moz-transform: translateX(-3%) rotate(-275deg); }
   100% {
     -moz-transform: translateX(0%) rotate(-270deg); } }
+
+.Kmu-logo {
+  height: 300px;
+  width: 300px;
+  transform: translateX(-75px); }

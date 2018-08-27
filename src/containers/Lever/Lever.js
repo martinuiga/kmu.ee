@@ -4,6 +4,8 @@ import * as actions from '../../store/actions/index';
 import './Lever.css';
 import lever from '../../assets/images/Lever_stick-01.svg';
 import wall from '../../assets/images/Lever_wall.svg';
+import nameLogo from '../../assets/images/kmulogobig.png';
+import SocialBar from '../SocialBar/SocialBar';
 
 
 class Lever extends Component {
@@ -13,13 +15,21 @@ class Lever extends Component {
 		if(leverImage) {
 			leverImage.className = "Lever-pull-active";
 		}
+		this.props.onSetLeverPulled(true);
 	}
 
 	render() {
 		return (
-				<div className="Lever">
-					<img src={lever} className="Lever-pull" alt="logo" onClick={() => this.pullLever()}/>
-					<img src={wall} className="Lever-wall" alt="logo"/>
+				<div>
+					<div className="Lever">
+						<img src={lever} className="Lever-pull" alt="logo" onClick={() => this.pullLever()}/>
+						<img src={wall} className="Lever-wall" alt="logo"/>
+					</div>
+					<div className="Name-logo">
+						<img src={nameLogo} className="Kmu-logo" alt="logo"/>
+					</div>
+
+					{this.props.isLeverPulled ? <SocialBar/> : ""}
 				</div>
 
 		)
