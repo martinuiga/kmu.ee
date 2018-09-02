@@ -1,5 +1,23 @@
 .Lever {
 	height: 15vh;
+	position: absolute;
+	width: 100%;
+	clear: both;
+}
+
+.nameContainer {
+	float: right;
+	clear: both;
+	margin-top: 200px;
+	left: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.speciality {
+	clear: both;
+	position: relative;
 }
 
 .Lever-pull {

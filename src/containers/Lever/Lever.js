@@ -4,8 +4,8 @@ import * as actions from '../../store/actions/index';
 import './Lever.css';
 import lever from '../../assets/images/Lever_stick-01.svg';
 import wall from '../../assets/images/Lever_wall.svg';
-import nameLogo from '../../assets/images/kmulogobig.png';
 import SocialBar from '../SocialBar/SocialBar';
+import KMU from '../KMU/KMU';
 
 
 class Lever extends Component {
@@ -25,11 +25,14 @@ class Lever extends Component {
 						<img src={lever} className="Lever-pull" alt="logo" onClick={() => this.pullLever()}/>
 						<img src={wall} className="Lever-wall" alt="logo"/>
 					</div>
-					<div className="Name-logo">
-						<img src={nameLogo} className="Kmu-logo" alt="logo"/>
+
+					<div className="nameContainer">
+						<KMU />
+						<div className="speciality"><p>Passionate software engineer</p></div>
 					</div>
 
-					{this.props.isLeverPulled ? <SocialBar/> : ""}
+
+					{this.props.isLeverPulled ? "" : ""}
 				</div>
 
 		)
