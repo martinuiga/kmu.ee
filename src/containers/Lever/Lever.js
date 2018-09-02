@@ -28,7 +28,6 @@ class Lever extends Component {
 
 					<div className="nameContainer">
 						<KMU />
-						<div className="speciality"><p>Passionate software engineer</p></div>
 					</div>
 
 

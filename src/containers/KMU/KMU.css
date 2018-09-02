@@ -3,19 +3,19 @@
 .text {
 	transform: translateX(-5%) translateY(-50%);
 	list-style: none;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	overflow-x: hidden;
+
 }
 
 .text li {
 	display: inline-block;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 5em;
 	color: #c19350;
 	opacity: 1;
 	transition: all 3s ease-in-out;
 	max-width: 2em;
+	word-break: keep-all;
 	font-family: 'Dosis', sans-serif;
 }
 .text.hidden li.spaced {
