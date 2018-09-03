@@ -31,7 +31,7 @@ class Lever extends Component {
 					</div>
 
 
-					{this.props.isLeverPulled ? "" : ""}
+					{this.props.isLeverPulled ? <SocialBar/> : ""}
 				</div>
 
 		)
