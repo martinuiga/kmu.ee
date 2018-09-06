@@ -8,6 +8,7 @@
 	align-items: center;
 }
 
+
 .text li {
 	display: inline-block;
 	font-weight: 600;
@@ -19,6 +20,13 @@
 	word-break: keep-all;
 	font-family: 'Dosis', sans-serif;
 }
+
+@media screen and (max-width: 800px) {
+	.text li {
+		font-size: 2.5em;
+	}
+}
+
 .text.hidden li.spaced {
 	padding-left: 0;
 }

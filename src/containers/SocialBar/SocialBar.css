@@ -1,8 +1,6 @@
-
-
 .socialMediaContainer {
 	width: 100%;
-	height: 50vh;
+	height: 40vh;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -12,16 +10,16 @@
 
 .icon {
 	color: #adc1c1;
-	padding-left: 4em;
-	padding-right: 4em;
+	margin-left: 5rem;
+	margin-right: 5rem;
 	font-size: 2rem;
 	animation: growSize 2s forwards;
 }
 
 .icon-hidden {
 	color: #adc1c1;
-	padding-left: 4em;
-	padding-right: 4em;
+	margin-left: 5rem;
+	margin-right: 5rem;
 	font-size: 2rem;
 }
 
@@ -32,8 +30,22 @@
 
 @keyframes growSize {
 	from {
-		transform: 	scale(1.1) }
+		transform: 	scale(1.0) }
 	to {
 		transform: scale(2.0) }
 }
 
+
+@media screen and (max-width: 800px) {
+	.icon {
+		font-size: 1.5rem;
+		margin-right: 3rem;
+		margin-left: 3rem;
+	}
+
+	.icon-hidden {
+		font-size: 1.5rem;
+		margin-right: 3rem;
+		margin-left: 3rem;
+	}
+}

@@ -6,6 +6,7 @@ import lever from '../../assets/images/Lever_stick-01.svg';
 import wall from '../../assets/images/Lever_wall.svg';
 import SocialBar from '../SocialBar/SocialBar';
 import KMU from '../KMU/KMU';
+import InfoText from '../InfoText/InfoText';
 
 
 class Lever extends Component {
@@ -29,9 +30,8 @@ class Lever extends Component {
 					<div className="nameContainer">
 						<KMU />
 					</div>
-
+					{this.props.isLeverPulled ? <InfoText/> : <div className="infoText"></div>}
 					<SocialBar/>
-					{/*{this.props.isLeverPulled ? <SocialBar/> : ""}*/}
 				</div>
 
 		)
