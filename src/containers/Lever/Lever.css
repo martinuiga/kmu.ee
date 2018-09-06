@@ -1,17 +1,12 @@
 .Lever {
-  height: 15vh;
-  position: absolute;
+  height: 25vh;
   width: 100%;
   clear: both; }
 
 .nameContainer {
-  float: right;
+  height: 15vh;
   clear: both;
-  margin-top: 200px; }
-
-.speciality {
-  clear: both;
-  position: relative; }
+  width: 100%; }
 
 .Lever-pull {
   width: 100px;

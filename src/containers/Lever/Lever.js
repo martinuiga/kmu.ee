@@ -30,8 +30,8 @@ class Lever extends Component {
 						<KMU />
 					</div>
 
-
-					{this.props.isLeverPulled ? <SocialBar/> : ""}
+					<SocialBar/>
+					{/*{this.props.isLeverPulled ? <SocialBar/> : ""}*/}
 				</div>
 
 		)

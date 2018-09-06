@@ -3,7 +3,6 @@ import ReactTransitionGroup from 'react-addons-css-transition-group'; // ES6
 import './Layout.css';
 import { connect } from 'react-redux';
 import Lever from '../Lever/Lever';
-import SocialBar from '../SocialBar/SocialBar';
 
 class Layout extends Component {
 
