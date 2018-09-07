@@ -7,13 +7,19 @@ import { connect } from 'react-redux';
 
 class SocialBar extends Component {
 
-	render() {
+	openLink = (link) => {
+		window.open(link, '_blank');
+	};
 
+	render() {
 		return (
 			<div className="socialMediaContainer">
-					<FontAwesomeIcon icon={faLinkedin} className={this.props.isLeverPulled ? "icon" : "icon-hidden"} />
-					<FontAwesomeIcon icon={faGithub} className={this.props.isLeverPulled ? "icon" : "icon-hidden"}/>
-					<FontAwesomeIcon icon={faFacebookF}  className={this.props.isLeverPulled ? "icon" : "icon-hidden"} />
+					<FontAwesomeIcon icon={faLinkedin} className={this.props.isLeverPulled ? "icon" : "icon-hidden"}  onClick={() =>
+						this.openLink('https://www.linkedin.com/in/karl-martin-uiga-aa7131114/')}  />
+					<FontAwesomeIcon icon={faGithub} className={this.props.isLeverPulled ? "icon" : "icon-hidden"} onClick={() =>
+						this.openLink('https://github.com/martinuiga')} />
+					<FontAwesomeIcon icon={faFacebookF}  className={this.props.isLeverPulled ? "icon" : "icon-hidden"} onClick={() =>
+						this.openLink('https://www.facebook.com/karlmartin.uiga?ref=bookmarks')} />
 			</div>
 		)
 	}

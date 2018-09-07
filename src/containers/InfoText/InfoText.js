@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './InfoText.css';
 import { connect } from 'react-redux';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
 class InfoText extends Component {
@@ -36,9 +37,18 @@ class InfoText extends Component {
 
 	render() {
 		return (
-			<div className="infoText">
-				<p>experienced in <b className="letter-changer" id="letter">React</b></p>
-			</div>
+
+			<ReactCSSTransitionGroup
+				transitionName="example"
+				transitionAppear={true}
+				transitionAppearTimeout={2000}
+				transitionEnter={false}
+				transitionLeave={false}>
+
+				<div className="infoText">
+					<p>experienced in <b className="letter-changer" id="letter">React</b></p>
+				</div>
+			</ReactCSSTransitionGroup>
 		)
 	}
 }
