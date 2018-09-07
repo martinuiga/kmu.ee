@@ -1,4 +1,4 @@
-# React Redux Boilerplate
+# Personal homepage for Karl-Martin Uiga
 
 ### `npm start`
 
